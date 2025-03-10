@@ -1,0 +1,57 @@
+{
+  "reporterEnabled": "spec, mocha-junit-reporter, mochawesome",
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "reports/junit/test-results.[hash].xml",
+    "toConsole": false,
+    "testCaseSwitchClassnameAndName": true,
+    "suiteTitleSeparatedBy": ".",
+    "properties": {
+      "environment": "test",
+      "service": "backend",
+      "timestamp": "UTC"
+    }
+  },
+  "mochawesomeReporterOptions": {
+    "reportDir": "reports/mochawesome",
+    "overwrite": false,
+    "html": true,
+    "json": true,
+    "timestamp": true,
+    "reportTitle": "Dareon2.0 Backend Test Report",
+    "reportPageTitle": "Dareon2.0 Backend Test Results",
+    "charts": true,
+    "code": true,
+    "showPassed": true,
+    "showFailed": true,
+    "showPending": true,
+    "showSkipped": false,
+    "showHooks": "failed",
+    "saveJson": true,
+    "saveHtml": true,
+    "dev": false,
+    "inline": false,
+    "enableCode": true,
+    "quiet": false,
+    "consoleReporter": "spec",
+    "useInlineDiffs": true,
+    "embeddedScreenshots": false,
+    "inlineAssets": true,
+    "cdn": true,
+    "autoOpen": false,
+    "jsonReport": true,
+    "htmlReport": true,
+    "saveAllAttempts": false,
+    "overwriteExisting": true,
+    "assets": [
+      "reports/mochawesome/assets"
+    ]
+  },
+  "specReporterOptions": {
+    "suppressPassed": false,
+    "suppressFailed": false,
+    "suppressPending": false,
+    "suppressSkipped": true,
+    "showSpecTiming": true,
+    "failuresSummaryDisabled": false
+  }
+}
